@@ -5,7 +5,39 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         link(rel="stylesheet", href="./styles.css")
-        title Document
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet"> 
+        link(rel="shortcut icon", href="../images/favicon-32x32.png", type="image/x-icon")
+        title Calculator
     body 
-        h1 hola 
-        h2 que onda 
+        header.header
+            h1.logo calc
+            div.right__content
+              p.theme-h THEME
+              div.button__contain 
+                p.numbers-h 1 2 3
+                div.button-h 
+                    div.button__circle 
+        div.display#display
+            p.display__number#display__number 0
+        section.keyboard
+            div.keyboard__contain
+                #seven.button 7
+                #eight.button 8
+                #nine.button 9
+                #del.button-del .
+                #four.button 4
+                #five.button 5
+                #six.button 6
+                #sum.button +
+                #one.button 1
+                #two.button 2
+                #three.button 3
+                #rest.button -
+                #dot.button .
+                #zero.button 0
+                #slash.button /
+                #multiplier.button x
+                #reset.button-reset RESET 
+                #equal.button-equal =
+        script(src="./script.js") 

@@ -1,0 +1,187 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+// variables //
+
+// tema 1 //
+
+$red: rgb(217, 58, 54);
+$backgroundblue: rgb(59, 70, 100);
+$darkblue: rgb(24, 31, 50);
+$whitebutton: rgb(234, 227, 219);
+$backgroundbutton: rgb(37, 45, 68);
+$bluebutton: rgb(99, 114, 152);
+
+// estilos generales //
+
+body {
+    background-color: $backgroundblue;
+}
+
+.header {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    color: white;
+    height: 90px;
+    align-items: center;
+    max-width: 375px;
+}
+
+.right__content {
+    display: flex;
+    align-items: flex-end;
+    width: 42%;
+    justify-content: space-between;
+}
+
+.numbers-h {
+    font-size: 12px;
+    letter-spacing: 6px;
+    margin-left: 8px;
+    margin-bottom: 5px;
+}
+
+.theme-h {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.button-h {
+    background-color: $backgroundbutton;
+    width: 68px;
+    height: 25px;
+    border-radius: 12px;
+    padding: 5px;
+    display: flex;
+    justify-content: left;
+}
+
+.button__circle {
+    background-color: $red;
+    border-radius: 50%;
+    height: 16px;
+    width: 16px;
+}
+
+.display {
+    display: flex;
+    background-color: $darkblue;
+    width: 90%;
+    margin: auto;
+    height: 85px;
+    border-radius: 9px;
+    align-items: center;
+    justify-content: end;
+    max-width: 375px;
+    overflow: hidden;
+}
+
+.display__number {
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.keyboard {
+    background-color: $backgroundbutton;
+    width: 90%;
+    margin: auto;
+    margin-top: 22px;
+    border-radius: 9px;
+    max-width: 375px;
+}
+
+.keyboard__contain {
+    width: 90%;
+    margin: auto;
+    padding-top: 6px;
+    padding-bottom: 20px;
+    max-width: 300px;
+}
+
+.button {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    margin-left: 7px;
+    margin-top: 14px;
+    background-color: $whitebutton;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 25px;
+    color: $backgroundbutton;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px 0px rgba(230, 211, 216, 0.75);
+}
+
+// .button::before {
+//     position: absolute;
+//     content: 0;
+//     width: 100%;
+//     height: 10px;
+//     background-color: rgb(177, 164, 156);
+// }
+
+.button-del {
+    display: inline-block;
+    height: 65px;
+    width: 65px;
+    margin-left: 7px;
+    margin-top: 14px;
+    background-color: $bluebutton;
+    text-align: center;
+    padding-top: 22px;
+    font-size: 25px;
+    color: $bluebutton;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0px 5px 0px 0px rgba(65, 79, 118, 0.75);
+}
+
+.button-del::after {
+    position: absolute;
+    content: "DEL";
+    color: white;
+    left: 13px;
+    font-size: 18px;
+}
+
+.button-reset {
+    display: inline-block;
+    background-color: $bluebutton;
+    margin-left: 8px;
+    margin-top: 14px;
+    height: 60px;
+    width: 141px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 9px;
+    box-shadow: 0px 5px 0px 0px rgba(65, 79, 118, 0.75);
+}
+
+.button-equal {
+    display: inline-block;
+    background-color: $red;
+    margin-left: 5px;
+    margin-top: 14px;
+    height: 60px;
+    width: 141px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 9px;
+    box-shadow: 0px 5px 0px 0px rgba(190, 51, 44, 0.75);
+}
