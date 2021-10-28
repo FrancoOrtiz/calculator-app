@@ -214,7 +214,7 @@ const deleteLast = () => {
     actualNumbers = "";
 }
 
-$del.addEventListener('click', deleteLast)
+$del.addEventListener('click', deleteLast);
 
 const comprobeDot = () => {
     const actualEvaluation = $display__number.textContent.slice(0, -1).split("").reverse().join("");
